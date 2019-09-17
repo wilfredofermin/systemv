@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Example Component</div>
+                    <div class="card-header">Profile  Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                       Estas el en perfil
                     </div>
                 </div>
             </div>

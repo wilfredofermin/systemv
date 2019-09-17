@@ -3,26 +3,29 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+// import Dashboard from './components/Dashboard.vue';
 
-const routes = new VueRouter({
-    routes // short for `routes: routes`
+
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+let routes = [
+    { path: '/dashboard', component: require('./components/Dashboard.vue').default },
+    { path: '/profile', component: require('./components/Profile.vue').default  }
+]
+
+
+const router = new VueRouter({
+    routes ,// short for `routes: routes`,
+    mode: 'history' // Esto evitar #/tusitio
 })
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+//  Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('profile', require('./components/Profile.vue').default);
+
 
 const app = new Vue({
     el: '#app',
+    router
 });

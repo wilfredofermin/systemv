@@ -13,3 +13,12 @@
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
+// Color Menu Activo
+.router-link-exact-active{
+    //  #99CF16; verde viva
+    // #8778B2;  morado viva
+    background-color: #8778B2; 
+    color:#fff !important;
+     }
+
+   

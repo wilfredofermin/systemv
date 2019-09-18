@@ -183,7 +183,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           {{-- <li class="nav-item has-treeview menu-open"> Con esto activo el menu para que siempre este desplegado --}}
           <li class="nav-item has-treeview">
           
-            <a href="#"  class="nav-link active">
+            <a href="#"  class="nav-link ">
               <i class="nav-icon fas fa-cog"></i>
               <p>
                 Administracion
@@ -198,7 +198,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li> --}}
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#" class="nav-link ">
                   <i class="far fa-circle fa fa-users"></i>
                   <p>Usuarios</p>
                 </a>

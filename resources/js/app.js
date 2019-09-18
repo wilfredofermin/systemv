@@ -22,8 +22,6 @@ const router = new VueRouter({
 
 
 //  Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-// Vue.component('profile', require('./components/Profile.vue').default);
-
 
 const app = new Vue({
     el: '#app',

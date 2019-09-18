@@ -52346,7 +52346,6 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
   mode: 'history' // Esto evitar #/tusitio
 
 }); //  Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-// Vue.component('profile', require('./components/Profile.vue').default);
 
 var app = new Vue({
   el: '#app',

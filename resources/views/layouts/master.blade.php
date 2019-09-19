@@ -12,7 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
    <!-- CSRF Token -->
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ config('app.name', 'Laravel') }}</title>
+<title>{{ config('app.name', 'SystemV') }}</title>
 
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,11 +22,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="wrapper" id="app">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light ">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars "></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         {{-- <a href="index3.html" class="nav-link">Home</a> --}}
@@ -42,7 +42,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <input class="form-control form-control-navbar" type="search" placeholder="Buscar .." aria-label="Search">
         <div class="input-group-append">
           <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search "></i>
           </button>
         </div>
       </div>
@@ -173,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
            <li class="nav-item">
             <router-link to="/dashboard" class="nav-link ">
               
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-tachometer-alt "></i>
               <p>
                Dasboard
                 {{-- <span class="right badge badge-danger">Nuevo</span> --}}
@@ -184,7 +184,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <li class="nav-item has-treeview">
           
             <a href="#"  class="nav-link ">
-              <i class="nav-icon fas fa-cog"></i>
+              <i class="nav-icon fas fa-cog "></i>
               <p>
                 Administracion
                 <i class="right fas fa-angle-left"></i>
@@ -193,21 +193,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <ul class="nav nav-treeview">
               {{-- <li class="nav-item">
                 <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-circle nav-icon "></i>
                   <p>Active Page</p>
                 </a>
               </li> --}}
               <li class="nav-item">
-                <a href="#" class="nav-link ">
-                  <i class="far fa-circle fa fa-users"></i>
+                <router-link to="/users" class="nav-link ">
+                  <i class="far fa-circle fa fa-users "></i>
                   <p>Usuarios</p>
-                </a>
+              </router-link>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <router-link to="/profile" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+              <i class="nav-icon fas fa-user "></i>
               <p>
                 Perfil
                 {{-- <span class="right badge badge-danger">Nuevo</span> --}}
@@ -218,7 +218,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <a class="nav-link" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
-                      <i class="nav-icon fas fa-power-off"></i>
+                      <i class="nav-icon fas fa-power-off red"></i>
                       <p>
                             {{ __('Logout') }}
                       </p>                  
@@ -267,13 +267,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer ">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
       <strong>VIVA</strong> <small>Estamos de tu lado</small> 
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="https://viva.com.do">System V</a>.</strong> Derechos Reservados.
+    <strong >Copyright &copy; 2019 <a href="https://viva.com.do">SYSTEM V</a>.</strong> Derechos Reservados.
   </footer>
 </div>
 <!-- ./wrapper -->

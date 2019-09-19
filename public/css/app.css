@@ -13108,6 +13108,18 @@ a.text-muted:hover {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }@charset "UTF-8";
 
+.moradoviva {
+  color: #8778B2;
+}
+
+.verdeviva {
+  color: #99CF16;
+}
+
+.red {
+  color: #e3342f;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -29584,5 +29596,13 @@ readers do not read off random characters that represent icons */
 .router-link-exact-active {
   background-color: #8778B2;
   color: #fff !important;
+}
+
+.navbar-white {
+  background-color: #8778B2;
+}
+
+.card-primary.card-outline {
+  border-top: 3px solid #99CF16;
 }
 

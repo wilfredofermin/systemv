@@ -1,13 +1,14 @@
 <template>
         <div class="container-fluid">
-        <div class="card">
+        <div class="card card-primary card-outline">
               <div class="card-header">
-               <div class="row">
-                                <div class="col-md-11"><h2>LISTA <b>USUARIOS</b></h2></div>
-                                <div class="col-md-1">
-                                    <button type="button" class="btn btn-info verdeviva "><i class="fas fa-user-plus"></i></button>
-                                </div>
-                            </div>
+                    
+               <div class="row">   
+                        <div class="col-md-11"><h3>LISTA <b>USUARIOS</b></h3></div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-block btn-primary btn-sm" data-toggle="modal" data-target="#adduser"><i class="fas fa-user-plus"></i> Agregar</button>
+                        </div>
+                    </div>
               </div>
               <div class="card-body">
          <table class="table table-hover">
@@ -38,6 +39,26 @@
                 </table>
               </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="adduserLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adduserLabel">NUEVO </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </template>

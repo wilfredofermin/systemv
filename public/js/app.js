@@ -1966,6 +1966,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -37370,21 +37391,28 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card card-primary card-outline" }, [
         _c("div", { staticClass: "card-header" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-11" }, [
-              _c("h2", [_vm._v("LISTA "), _c("b", [_vm._v("USUARIOS")])])
+              _c("h3", [_vm._v("LISTA "), _c("b", [_vm._v("USUARIOS")])])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-1" }, [
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-info verdeviva ",
-                  attrs: { type: "button" }
+                  staticClass: "btn btn-block btn-primary btn-sm",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "modal",
+                    "data-target": "#adduser"
+                  }
                 },
-                [_c("i", { staticClass: "fas fa-user-plus" })]
+                [
+                  _c("i", { staticClass: "fas fa-user-plus" }),
+                  _vm._v(" Agregar")
+                ]
               )
             ])
           ])
@@ -37464,7 +37492,82 @@ var staticRenderFns = [
             ])
           ])
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "adduser",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "adduserLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "adduserLabel" }
+                    },
+                    [_vm._v("NUEVO ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _vm._v("\n                    ...\n                ")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-footer" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      attrs: { type: "button", "data-dismiss": "modal" }
+                    },
+                    [_vm._v("Cerrar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Agregar")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
